@@ -1,0 +1,32 @@
+.intro {
+    padding: 180px 0 110px 0;
+    background: #fff;
+
+    &__inner {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__img {
+        margin-bottom: 20px;
+        width: 94px;
+        height: 48px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text {
+        font-family: 'Palatino Linotype';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+
+        @media (max-width:425px) {
+            font-size: 26px;
+            line-height: 35px;
+        }
+    }
+}

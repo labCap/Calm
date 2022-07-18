@@ -1,0 +1,156 @@
+.posts {
+    background: $white;
+
+    &__inner {
+        margin: 0 -20px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
+
+    &__box1 {
+        display: flex;
+
+
+        .posts__img {
+            width: 504px;
+        }
+    }
+
+    // &__col {}
+
+    &__item {
+        margin: 8px 15px;
+        background: #fff;
+        width: 245px;
+
+        @media (max-width:768px) {
+            width: 504px;
+        }
+
+        @media (max-width:425px) {
+            width: 300px;
+            margin: 0 15px;
+        }
+    }
+
+    // &__item-big {}
+
+    &__item-img {
+        width: 100%;
+
+        img {
+            width: 100%;
+
+            @media (max-width:425px) {
+                width: 300px;
+            }
+        }
+
+
+    }
+
+    &__text {
+        padding: 20px;
+        color: $grey;
+
+    }
+
+    &__item-subtitle {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+
+    &__item-title {
+        font-family: 'Palatino Linotype';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+
+        @media (max-width:768px) {
+            font-size: 23px;
+            line-height: 27px;
+        }
+    }
+
+    &__item-title-big {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    &__item-text {
+        margin-bottom: 65px;
+        // font-family: 'Georgia';
+        // font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    &__item-date {
+        font-size: 11px;
+        line-height: 17px;
+    }
+
+    &__box2 {
+
+        .posts__item {
+            width: 50%;
+
+            @media (max-width:768px) {
+                width: 504px;
+            }
+        }
+
+    }
+
+    // &__box3 {}
+
+}
+
+.posts__item-big {
+    max-width: 504px;
+    width: 100%;
+    overflow: hidden;
+
+    .posts__item-img {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+
+        // img {
+        //     width: 100%;
+        // }
+
+        // @media (max-width:768px) {
+        //     // width: 100%;
+        //     max-width: 504px;
+        // }
+
+        // @media (max-width:425px) {
+        //     // width: 100%;
+        //     max-width: 300px;
+        // }
+    }
+
+    @media (max-width:425px) {
+        // width: 100%;
+        max-width: 300px;
+    }
+
+}

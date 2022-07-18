@@ -1,0 +1,74 @@
+@import 'rem';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('../fonts/georgia/stylesheet.css');
+@import url('../fonts/Palatino/stylesheet.css');
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$font: 'Georgia';
+$font-weight: 400;
+
+$black: #353732;
+$black-hover: #878a84;
+$black-active: #54574f;
+$grey: #45525B;
+$white: #FAFAFA;
+
+$transition: all .2s linear;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+body {
+    font-family: $font;
+    font-weight: $font-weight;
+}
+
+a {
+    font-family: $font;
+    font-weight: $font-weight;
+    display: inline-block;
+    color: $black;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 1 auto;
+
+}
+
+.container {
+    max-width: 790px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0;
+
+    @media (max-width:425px) {
+        padding: 50px 0;
+    }
+}
+
+.text {
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+@import 'header';
+@import 'intro';
+@import 'posts';
+@import 'reg';
+@import 'archive';
+@import 'footer';
